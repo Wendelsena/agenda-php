@@ -18,18 +18,18 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- CSS Customizado -->
-    <link rel="stylesheet" href="<?= $BASE_URL ?>css/style.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>css/style.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="<?= $BASE_URL ?>/index.php">
-                    <img src="<?= $BASE_URL ?>/img/logo.svg" alt="Agenda">
+                <a class="navbar-brand" href="<?= BASE_URL ?>/index.php">
+                    <img src="<?= BASE_URL ?>/img/logo.svg" alt="Agenda">
                 </a>
                 <div class="navbar-nav">
-                    <a class="nav-link" id="home-link" href="<?= $BASE_URL ?>/index.php">Agenda</a>
-                    <a class="nav-link" id="add-link" href="<?= $BASE_URL ?>/create.php">Adicionar Contato</a>
+                    <a class="nav-link" id="home-link" href="<?= BASE_URL ?>/index.php">Agenda</a>
+                    <a class="nav-link" id="add-link" href="<?= BASE_URL ?>/create.php">Adicionar Contato</a>
                 </div>
             </div>
         </nav>
