@@ -44,15 +44,142 @@ main {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-h1 {
-    font-size: 1.875rem;
+#main-title {
+    font-size: 1.75rem;
     font-weight: 700;
-    color: #2c3e50;
+    color: #1e293b;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid #e9ecef;
-    padding-bottom: 0.5rem;
 }
 
-.fas, .far {
-    transition: color 0.2s ease;
+#msg {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border: 1px solid #badbcc;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
 }
+
+#contacts-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin-top: 0.5rem;
+    background-color: transparent;
+}
+
+#contacts-table thead th {
+    border: none;
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1.25rem;
+}
+
+#contacts-table tbody tr {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#contacts-table tbody tr:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#contacts-table tbody td, 
+#contacts-table tbody th {
+    padding: 1rem 1.25rem;
+    vertical-align: middle;
+    border: none;
+    color: #334155;
+    font-size: 0.95rem;
+}
+
+#contacts-table tbody tr td:first-child,
+#contacts-table tbody tr th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#contacts-table tbody tr td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.actions a,
+.delete-form button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    border: none;
+    background-color: #f1f5f9;
+}
+
+.actions a:hover,
+.delete-form button:hover {
+    transform: translateY(-1px);
+}
+
+.check-icon {
+    color: #2563eb;
+}
+
+.actions a:has(.check-icon):hover {
+    background-color: #dbeafe;
+}
+
+.edit-icon {
+    color: #059669;
+}
+
+.actions a:has(.edit-icon):hover {
+    background-color: #d1fae5;
+}
+
+.delete-icon {
+    color: #dc2626;
+}
+
+.delete-form button:hover {
+    background-color: #fee2e2;
+}
+
+.delete-form {
+    display: inline-block;
+    margin: 0;
+}
+
+#empty-list-text {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #64748b;
+}
+
+#empty-list-text a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#empty-list-text a:hover {
+    text-decoration: underline;
+}
+

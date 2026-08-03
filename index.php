@@ -6,7 +6,14 @@
     <?php if(isset($printMsg) && $printMsg != ""): ?>
       <p id="msg"><?= $printMsg ?></p>
     <?php endif; ?>
-    <h1 id="main-title">Minha agenda</h1>
+    
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1 id="main-title" class="mb-0">Meus Contatos</h1>
+      <a href="<?= BASE_URL?>create.php" class="btn btn-primary btn-add-contact">
+        <i class="fas fa-plus me-1"></i> Novo Contato
+      </a>
+    </div>
+
     <?php if(count($contacts) > 0): ?>
       <table class="table" id="contacts-table">
         <thead>
